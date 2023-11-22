@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "918914014784",
+    "project_id": "instodrum",
+    "storage_bucket": "instodrum.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918914014784:android:49154aa93908fef48b49a5",
+        "android_client_info": {
+          "package_name": "com.example.instodrum"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3Uozfrlm2uPV3lAQgl9laYx6dTnuDOQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
