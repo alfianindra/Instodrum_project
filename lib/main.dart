@@ -4,6 +4,14 @@ import 'package:instodrum/SplashScreen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+      options: FirebaseOptions(
+          apiKey: "AIzaSyA3Uozfrlm2uPV3lAQgl9laYx6dTnuDOQE",
+          appId: "1:918914014784:android:49154aa93908fef48b49a5",
+          messagingSenderId: "918914014784",
+          projectId: "instodrum"));
+  runApp(const MyApp());
+}
 
   runApp(
     MyApp(
@@ -46,6 +54,7 @@ class _MyAppState extends State<MyApp> {
     return KeyedSubtree(
       key: key,
       child: widget.child!,
-    );
+       );
   }
 }
+    
