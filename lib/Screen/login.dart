@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:instodrum/button/UiButton.dart';
+import 'package:instodrum/registerpage.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({Key? key}) : super(key: key);
@@ -139,7 +140,7 @@ class _SignInScreenState extends State<SignInScreen> {
       GestureDetector(
         onTap: () {
           Navigator.push(
-              context, MaterialPageRoute(builder: (context) => SignInScreen()));
+              context, MaterialPageRoute(builder: (context) => SignUpScreen()));
         },
         child: const Text(
           " Sign Up",

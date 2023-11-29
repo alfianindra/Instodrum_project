@@ -1,8 +1,9 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-// import 'package:project_uts/authentication/login.dart';
-// import 'package:project_uts/data/user_data.dart';
-// import 'package:project_uts/Screen/main_screen.dart';
+import 'package:instodrum/button/UiButton.dart';
+import 'package:instodrum/Screen/login.dart';
 
 class SignUpScreen extends StatefulWidget {
   @override
@@ -57,9 +58,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 height: 10,
               ),
               Padding(
-                padding: const EdgeInsets.all(15.0),
-                child: Image.network("https://cdn.discordapp.com/attachments/1019134439638450177/1177110647700455534/Instodrum.png?ex=657150b8&is=655edbb8&hm=7c7ed5f59ecabcdf5e9bb2a441fb1a9fc8325792af13eb7af2af61a0a1071da0&")
-              ),
+                  padding: const EdgeInsets.all(15.0),
+                  child: Image.network(
+                      "https://cdn.discordapp.com/attachments/1019134439638450177/1177110647700455534/Instodrum.png?ex=657150b8&is=655edbb8&hm=7c7ed5f59ecabcdf5e9bb2a441fb1a9fc8325792af13eb7af2af61a0a1071da0&")),
               const SizedBox(
                 height: 10,
               ),
@@ -222,57 +223,28 @@ class _SignUpScreenState extends State<SignUpScreen> {
               const SizedBox(
                 height: 15,
               ),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  primary: Colors.lightGreenAccent,
-                ),
-                child: const Text(
-                  "Buat akun",
-                  style: TextStyle(color: Colors.black),
-                ),
-                onPressed: isSignUpButtonEnabled
-                    ? () {
-                        if (passwordText.text == CpasswordText.text) {
-                          // Password dan Confirm Password sama
-                          // UserData.username = usernameText.text;
-                          // UserData.email = emailText.text;
-                          // UserData.nohp = phoneText.text;
-                          // Navigator.push(context,
-                          //     MaterialPageRoute(builder: (c) => MainScreen()));
-                        } else {
-                          // Password dan Confirm Password tidak sama
-                          showDialog(
-                            context: context,
-                            builder: (BuildContext context) {
-                              return AlertDialog(
-                                title: Text("Password Tidak Cocok"),
-                                content: Text(
-                                    "Password dan Confirm Password harus sama."),
-                                actions: [
-                                  TextButton(
-                                    child: Text("OK"),
-                                    onPressed: () {
-                                      Navigator.of(context).pop();
-                                    },
-                                  ),
-                                ],
-                              );
-                            },
-                          );
-                        }
-                      }
-                    : null,
-              ),
+              UiButton(context, "Sign up", () {
+                FirebaseAuth.instance
+                    .createUserWithEmailAndPassword(
+                        email: emailText.text, password: passwordText.text)
+                    .then((value) {
+                  print("created new account");
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => SignInScreen()));
+                }).onError((error, stackTrace) {
+                  print("Error ${error.toString()}");
+                });
+              }),
               TextButton(
                 child: const Text(
                   "Already have an Account? Login Here",
                   style: TextStyle(color: Colors.grey),
                 ),
                 onPressed: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(builder: (c) => LoginScreen()),
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (c) => SignInScreen()),
+                  );
                 },
               ),
             ],

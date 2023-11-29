@@ -1,6 +1,6 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:instodrum/SplashScreen.dart';
-
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -10,9 +10,6 @@ void main() async {
           appId: "1:918914014784:android:49154aa93908fef48b49a5",
           messagingSenderId: "918914014784",
           projectId: "instodrum"));
-  runApp(const MyApp());
-}
-
   runApp(
     MyApp(
       child: MaterialApp(
@@ -54,7 +51,6 @@ class _MyAppState extends State<MyApp> {
     return KeyedSubtree(
       key: key,
       child: widget.child!,
-       );
+    );
   }
 }
-    
