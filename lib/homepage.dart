@@ -1,6 +1,8 @@
 import 'package:instodrum/home/home.dart';
 import 'package:flutter/material.dart';
-
+import 'package:instodrum/pages/home.dart';
+import 'package:flutter/material.dart';
+import 'package:instodrum/pages/search.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) :super(key: key);
@@ -21,7 +23,7 @@ class _HomePageState extends State<HomePage> {
 //buat halaman masing-masing
 final List<Widget> _children = [
 UserHome(),
-
+Search(),
 ];
 
   @override
