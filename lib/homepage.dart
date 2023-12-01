@@ -1,3 +1,5 @@
+import 'package:instodrum/home/home.dart';
+import 'package:flutter/material.dart';
 import 'package:instodrum/pages/home.dart';
 import 'package:flutter/material.dart';
 import 'package:instodrum/pages/search.dart';
