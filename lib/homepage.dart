@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:instodrum/home/home.dart';
 import 'package:instodrum/pages/search.dart';
 import 'package:instodrum/home/reels.dart';
+import 'package:instodrum/pages/account.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -23,6 +24,7 @@ class _HomePageState extends State<HomePage> {
     UserHome(),
     Search(),
     UserReels(),
+    UserAccount(),
   ];
 
   @override
