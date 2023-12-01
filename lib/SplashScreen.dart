@@ -39,8 +39,8 @@ class _SplashScreenState extends State<SplashScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.network(
-                  "assets/images/Instodrum.png",
+                Image.asset(
+                  "assets/images/instodrum.png",
                   width: 600.0, // Adjust width as needed
                   fit: BoxFit.contain,
                 ),
