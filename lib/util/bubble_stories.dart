@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class BubbleStories extends StatelessWidget {
   final String text;
-
-  BubbleStories({required this.text});
+  
+BubbleStories({required this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -14,19 +14,16 @@ class BubbleStories extends StatelessWidget {
           Container(
             width: 60,
             height: 60,
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
               shape: BoxShape.circle,
+              color: Colors.grey[400],
               image: DecorationImage(
-                  image: AssetImage(
-                    'assets/avatar1.jpg',
-                  ),
-                  fit: BoxFit.fill),
+                image: NetworkImage('https://cdns.klimg.com/maverick-prod/feedImage/2023/9/5/1693902401730-m9b8o.webp'))
+            )),
+            SizedBox(
+              height: 10,
             ),
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          Text(text)
+            Text(text)
         ],
       ),
     );
