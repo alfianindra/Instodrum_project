@@ -1,5 +1,3 @@
-import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/material.dart';
 import 'package:instodrum/SplashScreen.dart';
 
 void main() async {
@@ -13,6 +11,7 @@ void main() async {
   runApp(
     MyApp(
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Instodrum',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
