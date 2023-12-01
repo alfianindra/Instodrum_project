@@ -1,4 +1,6 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:instodrum/SplashScreen.dart';
+import 'package:flutter/material.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,7 +20,6 @@ void main() async {
           useMaterial3: true,
         ),
         home: const SplashScreen(),
-        debugShowCheckedModeBanner: false,
       ),
     ),
   );
