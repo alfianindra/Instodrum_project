@@ -16,4 +16,4 @@ Untuk Video demo kami tentang Instagram-like application bisa disini:[Click Here
 
 Kalian bisa download source code pada link berikut : [https://github.com/alfianindra/Instodrum_project](https://github.com/alfianindra/Instodrum_project)
 
-Penjelasan dari applikasi kami ada pada pdf berikut : **Instodrum.pdf**
+Penjelasan dari applikasi instagram-like Instodrum kami ada pada pdf berikut : **Instodrum.pdf**
