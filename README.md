@@ -1,16 +1,19 @@
 # instodrum
 
-A new Flutter project.
+A Flutter project.
+Created by :
+ Alfian Indrajaya / 535220136 (alfianindra)
+ Carlouis Fernando Hariyadi / 535220156 (CarlouisFernando)
+ Hansen Pratama / 535220128 (Viscot)
+ Maryanto / 535220130 (MaryAntoinetteVincent)
+ Novandry Aprillian / 535220165 (NovandryA)
+ Witriatna Kosahi / 535220125 (Witriatna)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+Video Demo Aplikasi
+----------------------------------------------------
+Untuk Video demo kami tentang Instagram-like application bisa disini:[Click Here](https://www.youtube.com/watch?v=yKe6uKYA9FI)
 
-A few resources to get you started if this is your first Flutter project:
+Kalian bisa download source code pada link berikut : [https://github.com/alfianindra/Instodrum_project](https://github.com/alfianindra/Instodrum_project)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Penjelasan dari applikasi kami ada pada pdf berikut : Instodrum.pdf
